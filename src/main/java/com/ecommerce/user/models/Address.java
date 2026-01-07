@@ -8,7 +8,7 @@ import org.springframework.data.annotation.Id;
 public class Address {
 
     @Id
-    private Long id;
+    private String id;
 
     private String street;
     private String city;
