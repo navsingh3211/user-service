@@ -1,16 +1,20 @@
 spring:
   application:
     name: user-service
-  datasource:
-    url: jdbc:postgresql://localhost:5432/userdb
-    username: postgres
-    password: admin
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    database: POSTGRESQL
+  data:
+    mongodb:
+      database: userdb
+      uri: mongodb://localhost:27017/userdb
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/userdb
+#    username: postgres
+#    password: admin
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#    database: POSTGRESQL
 #  h2:
 #    console:
 #      enabled: true
