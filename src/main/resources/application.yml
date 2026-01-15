@@ -3,6 +3,17 @@ spring:
     name: userservice
   config:
     import: optional:configserver:http://localhost:8889
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,refresh,busrefresh
 
 #  datasource:
 #    url: jdbc:postgresql://localhost:5432/userdb
