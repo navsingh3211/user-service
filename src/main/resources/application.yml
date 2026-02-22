@@ -16,11 +16,16 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
 
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: health,info,refresh,busrefresh
 management:
   endpoints:
     web:
       exposure:
-        include: health,info,refresh,busrefresh
+        include: "*"
 
 #  datasource:
 #    url: jdbc:postgresql://localhost:5432/userdb
